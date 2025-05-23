@@ -1,6 +1,7 @@
 
 import Classes from "./page.module.css";
 import Image from "next/image";
+
 import { getMealSlug } from "@/lib/meal";
 
 
