@@ -1,9 +1,9 @@
 import classes from './page.module.css';
 import ImapagePicker from '@/app/components/mealsComponent/image-picker';
 import { ShareMael } from '@/lib/action';
+
 export default function ShareMealPage() {
   return (
-   
     <>
     
       <header className={classes.header} >
@@ -42,7 +42,7 @@ export default function ShareMealPage() {
               required
             ></textarea>
           </p>
-        <ImapagePicker label="Select an Image" name="image "/>
+        <ImapagePicker label="Select an Image" name="image"/>
           <p className={classes.actions}>
             <button type="submit">Share Meal</button>
           </p>
