@@ -4,6 +4,7 @@ import Classes from "./Page.module.css"
 import Link from "next/link";
 import getMeals from "../../lib/meal";
 
+
  async function Meals(){
 const meals = await getMeals();
 return <MealsGrid meals={meals}/>

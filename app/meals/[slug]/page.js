@@ -1,13 +1,11 @@
 
 import Classes from "./page.module.css";
 import Image from "next/image";
-
 import { getMealSlug } from "@/lib/meal";
 
 
 export default function DetailPage({params}){
     const meal = getMealSlug(params.slug);
-
     return(
         <div>
           <header className={Classes.header}>
@@ -24,8 +22,6 @@ export default function DetailPage({params}){
            
             <main>
                 <p className={Classes.instructions} dangerouslySetInnerHTML={{__html:meal.instructions,}}>
-
-
                 </p>
             </main>
          
